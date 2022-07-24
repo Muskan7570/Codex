@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>
+            CodeX
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="icon" href="images/icon.png">
+    </head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li  data-text="Home"><a href="html/home.html">Home</a></li>
+                <li  data-text="Events"><a href="html/events.html">Events</a></li>
+                <li  data-text="Login"><a href="html/login_form.html">Login</a></li>
+                <li  data-text="About"><a href="about.html">About</a></li>
+                <li  data-text="Contact"><a href="contact_us.html">Contact</a></li>
+            </ul>
+        </div>
+        <section class="banner">
+            <header>
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><img src="images/icon.png " width="120" alt=""></a>
+                  </div>
+                   <div class="toggle" onclick="toggleMenu();"> </div>       
+            </header>
+            <video src="video/Background.mp4" autoplay muted loop></video>
+            <div class="overlay"></div>
+            <div class="text" id="home">
+           
+                <h1>CoDeX</h1>
+            </div>
+            <ul class="sci">
+               <li> <img src="images/eat.png" alt="error"></li>
+               <li><img src="images/sleep.png" alt="error"></li>  
+               <li><img src="images/code.png" alt="error"></li>
+               <li><img src="images/repeat.png" alt="error"></li>
+            </ul>
+            <ul class="sci2">
+                <li>eat();</li>
+                <li>sleep();</li>
+                <li>code();</li>
+                <li>repeat();</li>
+            </ul>
+           <div class="button">
+            <a href="html/home.html" class="btn">EXPLORE</a>
+            <a href="html/login_form.html" class="btn">JOIN US</a>
+           </div>
+
+        </section>
+        
+       <script type="text/javascript">
+           function toggleMenu()
+           {
+               var menuToggle = document.querySelector('.toggle');
+               var banner = document.querySelector('.banner');
+               menuToggle.classList.toggle('active');
+               banner.classList.toggle('active');
+           }
+    </script>
+    </body>
+</html>
